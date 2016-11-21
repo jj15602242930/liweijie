@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>欢迎你：{{username}}</p>
+{% if c %}
+<h1>safe:{{ name|safe}}</h1>
+<ul>{% for x in c %}
+    <li>{{ x }}</li>
+    {% endfor %}
+{% else %}
+<p>没传结果集过来</p>
+{% endif %}
+</ul>
+</body>
+</html>
